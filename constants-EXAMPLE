@@ -1,0 +1,17 @@
+// Change this file to constants.js and update the fields accordingly. The fields array needs to be named the same as the alias for each field in your query
+
+module.exports = {
+    creds: {
+        username: 'XXXXXXXXX',
+        password: 'XXXXXXXXX'
+    },
+    config: {
+        cluster: 'couchbase://{SERVER_NAME}/',
+        bucket: '{BUCKET_NAME}'
+    },
+    fields: [
+        {ARRAY_OF_FIELDS_TO_SHOW_ON_REPORT}
+    ],
+    query: `{N1QL_QUERY}`,
+    output: './output/report.csv'
+}
